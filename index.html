@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TV-series</title>
+
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="tv-style.css">
+
+</head>
+
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>My TV-series</h1>
+  </div>
+        <div class="col-lg-12 mb-4">
+          <button class="btn btn-dark btn-circle btn-circle-lg m-1"><a href="index.html"><i class="fa fa-home"></i></a></button>
+        </div>
+</div>
+
+<!-- The navigation menu -->
+<div class="navbar">
+  <a class="active" href="index.html"><i class="fas fa-laptop"></i> TV-series</a>
+  <a href="Movies.html"><i class="fas fa-desktop"></i> Movies</a>
+  <a href="Books.html"><i class="fas fa-book"></i> Books</a>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://www.netflix.com/ee/" target="_blank" class="netflix"><img src="Pictures/netflix.png" class="jump" alt="netflix"></a>
+  <a href="#">Completed</a>
+  <a href="#">In Progess</a>
+  <a href="#">Abandoned</a>
+</div>
+
+<div id="bodynav">
+</div>
+
+<div id="background-img">
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  <span onclick="openNav()">&#9776; Filters</span>
+</div>
+
+<a href="javascript:" id="return-to-bottom" onclick="arrowdown()"><i class="icon-chevron-down"></i></a>
+
+<script type="text/javascript">arrowdown();</script>
+  
+<br>
+<div class="grid-wrapper">
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/The Witcher.jpg" class="card-img-top" alt="the-witcher-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">The Witcher</h4>
+				<h5>Season 1 out of 1</h5>
+
+					<p class="card-text">Episodes watched : 8 out of 8</p>
+
+			<!--Icons-->
+			<span onclick="tvclose(), tvcomplete()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80189685" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/Lucifer.jpg" class="card-img-top" alt="lucifer-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">Lucifer</h4>
+				<h5>Season 4 out of 4</h5>
+
+					<p class="card-text">Episodes watched : 67 out of 67</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80057918" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/Black Mirror.jpg" class="card-img-top" alt="black-mirror-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">Black Mirror</h4>
+				<h5>Season 3 out of 5</h5>
+
+					<p class="card-text">Episodes watched : 8 out of 22</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/70264888" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/You.jpg" class="card-img-top" alt="you-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">You</h4>
+				<h5>Season 1 out of 2</h5>
+
+					<p class="card-text">Episodes watched : 9 out of 20</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80211991" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/Stranger Things.jpg" class="card-img-top" alt="stranger-things-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">Stranger Things</h4>
+				<h5>Season 1 out of 3</h5>
+
+					<p class="card-text">Episodes watched : 1 out of 25</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80057281" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/Mindhunter.jpg" class="card-img-top" alt="mindhunter-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">Mindhunter</h4>
+				<h5>Season 1 out of 2</h5>
+
+					<p class="card-text">Episodes watched : 1 out of 19</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80114855" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/The Witcher.jpg" class="card-img-top" alt="the-witcher-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">The Witcher</h4>
+				<h5>Season 1 out of 1</h5>
+
+					<p class="card-text">Episodes watched : 8 out of 8</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80189685" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/Lucifer.jpg" class="card-img-top" alt="lucifer-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">Lucifer</h4>
+				<h5>Season 4 out of 4</h5>
+
+					<p class="card-text">Episodes watched : 67 out of 67</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80057918" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/Black Mirror.jpg" class="card-img-top" alt="black-mirror-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">Black Mirror</h4>
+				<h5>Season 3 out of 5</h5>
+
+					<p class="card-text">Episodes watched : 8 out of 22</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/70264888" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/You.jpg" class="card-img-top" alt="you-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">You</h4>
+				<h5>Season 1 out of 2</h5>
+
+					<p class="card-text">Episodes watched : 9 out of 20</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80211991" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/Stranger Things.jpg" class="card-img-top" alt="stranger-things-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">Stranger Things</h4>
+				<h5>Season 1 out of 3</h5>
+
+					<p class="card-text">Episodes watched : 1 out of 25</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80057281" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/Mindhunter.jpg" class="card-img-top" alt="mindhunter-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">Mindhunter</h4>
+				<h5>Season 1 out of 2</h5>
+
+					<p class="card-text">Episodes watched : 1 out of 19</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80114855" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/The Witcher.jpg" class="card-img-top" alt="the-witcher-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">The Witcher</h4>
+				<h5>Season 1 out of 1</h5>
+
+					<p class="card-text">Episodes watched : 8 out of 8</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80189685" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/Lucifer.jpg" class="card-img-top" alt="lucifer-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">Lucifer</h4>
+				<h5>Season 4 out of 4</h5>
+
+					<p class="card-text">Episodes watched : 67 out of 67</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80057918" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/Black Mirror.jpg" class="card-img-top" alt="black-mirror-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">Black Mirror</h4>
+				<h5>Season 3 out of 5</h5>
+
+					<p class="card-text">Episodes watched : 8 out of 22</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/70264888" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/You.jpg" class="card-img-top" alt="you-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">You</h4>
+				<h5>Season 1 out of 2</h5>
+
+					<p class="card-text">Episodes watched : 9 out of 20</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80211991" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/Stranger Things.jpg" class="card-img-top" alt="stranger-things-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">Stranger Things</h4>
+				<h5>Season 1 out of 3</h5>
+
+					<p class="card-text">Episodes watched : 1 out of 25</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80057281" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box tv-card">
+
+	<!--Card Regular-->
+	<div class="card card-cascade">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+			<img src="Pictures/Mindhunter.jpg" class="card-img-top" alt="mindhunter-pic">
+				<a>
+					<div class="mask rgba-white-slight"></div>
+				</a>
+		</div>
+		<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade text-center">
+			<!--Title-->
+			<h4 class="card-title">Mindhunter</h4>
+				<h5>Season 1 out of 2</h5>
+
+					<p class="card-text">Episodes watched : 1 out of 19</p>
+
+			<!--Icons-->
+			<span onclick="tvclose()" class="pull-right clickable" data-effect="fadeOut">
+				<img src="Pictures/Completed.png" width="49" height="64" class="tv-co complete" alt="Completed">
+				<a href="https://www.netflix.com/ee/title/80114855" target="_blank">
+				<img src="Pictures/InProgress.png" width="49" height="64" class="tv-ip" alt="InProgress"></a>
+				<img src="Pictures/Abandoned.png" width="49" height="64" class="tv-ab abandon" alt="Abandoned">
+			</span>
+
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Regular-->
+
+</div>
+<!-- Grid column -->
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+</div>
+
+<!-- Font Awesome icons -->
+<script src="https://kit.fontawesome.com/dbdca94052.js" crossorigin="anonymous"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+
+<a href="javascript:" id="return-to-top" onclick="arrowup()"><i class="icon-chevron-up"></i></a>
+
+<script src="script.js"></script>
+
+<script type="text/javascript">arrowup();</script>
+
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+<!-- Footer -->
+<footer class="page-footer font-small rgba-red-strong">
+		<!-- Copyright -->
+			<div class="footer-copyright text-center py-3">
+			</div>
+		<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small accent-4 pt-4">
+
+<!-- Footer Links -->
+<div class="container-fluid text-center text-md-center">
+	<!-- Grid column -->
+	  <!-- Also, col-md-15 is responsible for moving content right or left, depending on the number -->
+		<div class="col-md-15 mb-md-0 mb-3">
+
+			<ul class="list-unstyled">
+		  		<li>
+            		<img src="Pictures/zippelgazzW.png" width="177" height="57" class="zippelgazz" alt="zippelgazzW logo">
+          		</li>
+          		<li>
+            		<img src="Pictures/Facebook.png" width="64" height="64" class="facebook" alt="Facebook logo">
+          		</li>
+			</ul>
+		</div>
+	  <!-- Grid column -->
+</div>
+<!-- Footer Links -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">© 2020 Copyright:
+	<a href="#"> zippelgazz.com</a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</body>
+</html>

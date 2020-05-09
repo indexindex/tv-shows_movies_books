@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Books</title>
+
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="books.css">
+</head>
+
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>My Book Collection</h1>
+  </div>
+        <div class="col-lg-12 mb-4">
+          <button class="btn btn-dark btn-circle btn-circle-lg m-1"><a href="index.html"><i class="fa fa-home"></i></a></button>
+        </div>
+</div>
+
+<div class="navbar">
+  <a href="index.html"><i class="fas fa-laptop"></i> TV-series</a>
+  <a href="Movies.html"><i class="fas fa-desktop"></i> Movies</a>
+  <a class="active" href="Books.html"><i class="fas fa-book"></i> Books</a>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="Pictures/Book side.png" alt="Books">
+  <a href="#">Completed</a>
+  <a href="#">In Progess</a>
+  <a href="#">Abandoned</a>
+</div>
+
+<div id="bodynav">
+</div>
+
+<div id="background-img">
+
+<div id="main">
+  <span onclick="openNav()">&#9776; Filters</span>
+</div>
+
+<a href="javascript:" id="return-to-bottom" onclick="arrowdown()"><i class="icon-chevron-down"></i></a>
+
+<script type="text/javascript">arrowdown();</script>
+
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+	  <div class="searchbar">
+		<input class="search_input" id="myInput" type="search" placeholder="Search..." onkeyup="myFilter()">
+		<a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+	  </div>
+	</div>
+  </div>
+
+<br />
+<div class="grid-wrapper" id="myItems">
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- Grid column -->
+<div id="book" class="box">
+
+
+	<!--Card Narrower-->
+	<div class="card card-cascade narrower">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+        	<img src="Pictures/book.png" class="card-img-top" alt="book-1">
+        		<a>
+          			<div class="mask rgba-white-slight"></div>
+        		</a>
+      	</div>
+      	<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade">
+        	<h5 class="fantasy"><i class="fas fa-book"></i> Fantasy</h5>
+        	<!--Title-->
+        		<h5 class="card-title-rus">Book title 1</h5>
+        		<!--Text-->
+        			<p class="card-text">Author A</p>
+						<a href="" class="btn btn-brown">Check out!</a>
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Narrower-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div id="book" class="box">
+
+
+	<!--Card Narrower-->
+	<div class="card card-cascade narrower">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+        	<img src="Pictures/book.png" class="card-img-top" alt="book-2">
+        		<a>
+          			<div class="mask rgba-white-slight"></div>
+        		</a>
+      	</div>
+      	<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade">
+        	<h5 class="adventures"><i class="fas fa-book"></i> Adventures</h5>
+        	<!--Title-->
+        		<h5 class="card-title-rus">Book title 2</h5>
+        		<!--Text-->
+        			<p class="card-text">Author B</p>
+						<a href="" class="btn btn-brown">Check out!</a>
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Narrower-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box">
+
+
+	<!--Card Narrower-->
+	<div class="card card-cascade narrower">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+        	<img src="Pictures/book.png" class="card-img-top" alt="book-3">
+        		<a>
+          			<div class="mask rgba-white-slight"></div>
+        		</a>
+      	</div>
+      	<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade">
+        	<h5 class="fiction"><i class="fas fa-book"></i> Fiction</h5>
+        	<!--Title-->
+        		<h5 class="card-title-rus">Book title 3</h5>
+        		<!--Text-->
+        			<p class="card-text">Author C</p>
+						<a href="" class="btn btn-brown">Check out!</a>
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Narrower-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box">
+
+
+	<!--Card Narrower-->
+	<div class="card card-cascade narrower">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+        	<img src="Pictures/book.png" class="card-img-top" alt="book-4">
+        		<a>
+          			<div class="mask rgba-white-slight"></div>
+        		</a>
+      	</div>
+      	<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade">
+        	<h5 class="history"><i class="fas fa-book"></i> History</h5>
+        	<!--Title-->
+        		<h5 class="card-title-rus">Book title 4</h5>
+        		<!--Text-->
+        			<p class="card-text">Author D</p>
+						<a href="" class="btn btn-brown">Check out!</a>
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Narrower-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box">
+
+
+	<!--Card Narrower-->
+	<div class="card card-cascade narrower">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+        	<img src="Pictures/book.png" class="card-img-top" alt="book-5">
+        		<a>
+          			<div class="mask rgba-white-slight"></div>
+        		</a>
+      	</div>
+      	<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade">
+        	<h5 class="psychology"><i class="fas fa-book"></i> Psychology</h5>
+        	<!--Title-->
+        		<h5 class="card-title-rus">Book title 5</h5>
+        		<!--Text-->
+        			<p class="card-text">Author E</p>
+						<a href="" class="btn btn-brown">Check out!</a>
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Narrower-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="box">
+
+
+	<!--Card Narrower-->
+	<div class="card card-cascade narrower">
+
+		<!--Card image-->
+		<div class="view view-cascade overlay">
+        	<img src="Pictures/book.png" class="card-img-top" alt="book-6">
+        		<a>
+          			<div class="mask rgba-white-slight"></div>
+        		</a>
+      	</div>
+      	<!--/.Card image-->
+
+		<!--Card content-->
+		<div class="card-body card-body-cascade">
+        	<h5 class="science"><i class="fas fa-book"></i> Science</h5>
+        	<!--Title-->
+        		<h5 class="card-title-rus">Book title 6</h5>
+        		<!--Text-->
+        			<p class="card-text">Author F</p>
+						<a href="" class="btn btn-brown">Check out!</a>
+		</div>
+		<!--/.Card content-->
+
+	</div>
+	<!--/.Card Narrower-->
+
+</div>
+<!-- Grid column -->
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+</div>
+<div class="clearfooter"></div>
+
+<!-- Font Awesome icons -->
+<script src="https://kit.fontawesome.com/dbdca94052.js" crossorigin="anonymous"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+
+<br />
+
+<a href="javascript:" id="return-to-top" onclick="arrowup()"><i class="icon-chevron-up"></i></a>
+
+<script src="script.js"></script>
+
+<script type="text/javascript">arrowup();</script>
+
+<!-- Footer -->
+<footer class="page-footer font-small rgba-brown-strong">
+		<!-- Copyright -->
+			<div class="footer-copyright text-center py-3">
+			</div>
+		<!-- Copyright -->
+
+</footer>
+
+</div>
+
+		<!-- Footer -->
+<footer class="page-footer font-small brown darken-3 pt-4">
+
+	<!-- Footer Links -->
+	<div class="container-fluid text-center text-md-center">
+		<!-- Grid column -->
+		  <!-- Also, col-md-15 is responsible for moving content right or left, depending on the number -->
+			<div class="col-md-15 mb-md-0 mb-3">
+	
+				<ul class="list-unstyled">
+					<li>
+						<img src="Pictures/zippelgazzW.png" width="177" height="57" class="zippelgazz" alt="zippelgazzW logo">
+					  </li>
+					  <li>
+						<img src="Pictures/Facebook.png" width="64" height="64" class="facebook" alt="Facebook logo">
+					  </li>
+				</ul>
+			</div>
+		  <!-- Grid column -->
+	</div>
+	<!-- Footer Links -->
+	
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">© 2020 Copyright:
+		<a href="#"> zippelgazz.com</a>
+	</div>
+	<!-- Copyright -->
+	
+	</footer>
+	<!-- Footer -->
+
+</body>
+</html>
